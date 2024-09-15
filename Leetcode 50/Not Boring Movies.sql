@@ -33,5 +33,5 @@ ORDER BY rating DESC;
 SELECT *
 FROM Cinema
 WHERE MOD(i,2)==1
-    AND description!='boring'
+    AND LOWER(description) != 'boring'
 ORDER BY rating DESC;
